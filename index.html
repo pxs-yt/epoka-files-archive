@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Archive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>File Archive</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for subjects..." onkeyup="filterSubjects()">
+    </div>
+    <div class="search-results">
+      <ul></ul>
+    </div>
+  </header>
+  <main class="container">
+    <section class="year" onclick="toggleSemesters('year1')">
+      <h2>Year 1</h2>
+      <div class="semesters" id="year1">
+        <div class="semester">
+          <h3><a href="year_1/introduction-to-economics.html">Introduction to Economics</a></h3>
+        </div>
+        <div class="semester">
+          <h3><a href="year_1/math-for-economics-and-business-I.html">Math for Economics and Business I</a></h3>
+        </div>
+        <div class="semester">
+            <h3><a href="year_1/introduction-to-business.html">Introduction to Business</a></h3>
+          </div>
+          <div class="semester">
+            <h3><a href="year_1/essentials-of-organizational-behavior.html">Essentials of Organizational Behavior</a></h3>
+          </div>
+          <div class="semester">
+            <h3><a href="year_1/introduction-to-law.html">Introduction to Law</a></h3>
+          </div>
+      </div>
+    </section>
+    <section class="year" onclick="toggleSemesters('year2')">
+      <h2>Year 2</h2>
+      <div class="semesters" id="year2">
+        <div class="semester">
+          <h3><a href="year_2/">X</a></h3>
+        </div>
+        <div class="semester">
+          <h3><a href="year_2/">X</a></h3>
+        </div>
+      </div>
+    </section>
+    <section class="year" onclick="toggleSemesters('year3')">
+      <h2>Year 3</h2>
+      <div class="semesters" id="year3">
+        <div class="semester">
+          <h3><a href="year_3/">X</a></h3>
+        </div>
+        <div class="semester">
+          <h3><a href="year_3/">X</a></h3>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
